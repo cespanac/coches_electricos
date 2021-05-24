@@ -3,6 +3,8 @@ import logo from "../../assets/Logotipo.svg";
 import "./Signin.css";
 import FetchLogin from "../../Hooks/FetchLogin";
 import { useHistory } from "react-router-dom";
+import Facebook from '../Facebook/facebook'
+
 
 function Signin(props) {
   const history = useHistory();
@@ -37,6 +39,8 @@ function Signin(props) {
     }
   };
 
+
+
   return (
     <div className="main-login">
       <div className="logo">
@@ -68,6 +72,9 @@ function Signin(props) {
         <button className="registrarse" onClick={changePage}>
           REGISTRARSE
         </button>
+      </div>
+      <div>
+        <Facebook />
       </div>
     </div>
   );
